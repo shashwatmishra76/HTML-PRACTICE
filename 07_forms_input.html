@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tutorial</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Name</label><br>
+            <!-- id is used for highlighting when label is clicked. name is used to process the form in backend by grabbing data by the name -->
+            <input type="text" id="name" name="nameElement" value="John Doe"> 
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <!-- Tag for entering email -->
+            <input type="email" id="email" name="emailElement" placeholder="Enter an email">
+        </div>
+        <div>
+            <label for="message">Message</label><br>
+            <!-- Tag for entering large text -->
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <div>
+            <label for="sex">Sex</label>
+            <!-- Select input -->
+            <select name="sex" id="sex">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="age">Age</label><br>
+            <!-- Number input -->
+            <input type="number" name="age" id="age">
+
+        </div>
+        <div>
+            <label for="birthdate">Birthdate</label><br>
+            <!-- Date input -->
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <div>
+            <label for="membership">Membership</label><br>
+            <!-- 'value' gets sent back to the server -->
+            <!-- radio input -->
+            <input type="radio" name="membership" value="simple" id="membership" checked> Simple
+            <input type="radio" name="membership" value="standard" id="membership"> Standard
+        </div>
+        <div>
+            <label for="hobbies">Hobbies</label><br>
+            <!-- 'value' gets sent back to the server -->
+            <!-- checkbox input -->
+            <input type="checkbox" name="hobbies" value="swimming" id="hobbies" checked> Swimming
+            <input type="checkbox" name="hobbies" value="cycling" id="hobbies"> Cycling    
+        </div>
+        
+        <!-- Submit button, method 1 -->
+        <input type="submit" value="Submit">
+        
+        <!-- Using button tag -->
+        <!-- <button type="submit">Submit</button> -->
+
+        <!-- Reset button -->
+        <button type="reset">Reset Form</button>
+    </form>
+    
+</body>
+</html>
